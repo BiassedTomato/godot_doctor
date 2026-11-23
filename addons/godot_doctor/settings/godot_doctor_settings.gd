@@ -22,6 +22,11 @@ extends Resource
 ## on [member validate_on_save].
 @export var validate_on_open: bool = true
 
+## Whether to automatically run validations when building project.
+## [br]
+## If this is set to [code]true[/code], running a scene with unresolved validation errors will fail.
+@export var validate_on_build: bool = true
+
 @export_group("Notification settings")
 ## Whether to show the welcome dialog when enabling the plugin.
 @export var show_welcome_dialog: bool = true
